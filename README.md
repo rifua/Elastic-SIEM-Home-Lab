@@ -1,4 +1,4 @@
-# Elastic-Stack Home Lab
+# Elastic SIEM Home Lab
 
 Objective
 
