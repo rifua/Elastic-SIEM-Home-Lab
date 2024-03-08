@@ -129,8 +129,5 @@ Severity level can be changed on the "About rule" section. Likewise, Schedule ra
 <img width="1440" alt="Screen Shot 2024-03-08 at 7 04 45 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/e9e91069-b78e-4aa7-8545-353f4ebf6b97">
 Select "Create & enable rule" after that the rule is created. 
 
-
-
-
-
-
+<img width="1440" alt="Screen Shot 2024-03-08 at 7 12 09 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/33876cf9-4ebc-4fa1-a1e4-7033e0af785d">
+Security > Rules > Detection rules (SIEM) [To check if the rule is active]
