@@ -110,15 +110,27 @@ A generic dashboard that depicts all the events generated from the Kali Linux VM
 <img width="1440" alt="Screen Shot 2024-03-08 at 6 13 12 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/4d038e20-11f8-4a82-adca-585686740a5b">
 A specific dashboard that depicts only the NMap events generated from the Kali Linux VM
 
-
-
-
-
-
-
-
-
-
-
-
 Step 7: Alert Generation
+
+Now that we have created dashboards for visualization of security events, we will now focus on generating alerts for specific security events (i.e. nmap scans for this case). 
+
+<img width="1440" alt="Screen Shot 2024-03-08 at 6 55 26 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/35d70b38-a692-47ba-8ece-14818cf3b499">
+
+Open the HamBurger Menu > Security > Alerts > "Manage rules" on the top right > Select "Create new rule" on the top right
+
+<img width="1440" alt="Screen Shot 2024-03-08 at 6 57 15 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/a146606b-8539-4ec1-bfbf-97247b75a8b0">
+Select "Custom query" > "Rule preview" 
+
+<img width="1440" alt="Screen Shot 2024-03-08 at 7 00 26 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/5dfedd26-df27-47ce-aca4-71d2d31765c8">
+On the "Custom query" search bar type "event.action: nmap_scan" since we are creating an alert for nmap scans. 
+
+Severity level can be changed on the "About rule" section. Likewise, Schedule rate can also be changed under the "Schedule rule" section. Click "Continue" after you're done. 
+
+<img width="1440" alt="Screen Shot 2024-03-08 at 7 04 45 pm" src="https://github.com/rifua/Elastic-SIEM-Home-Lab/assets/160899842/e9e91069-b78e-4aa7-8545-353f4ebf6b97">
+Select "Create & enable rule" after that the rule is created. 
+
+
+
+
+
+
